@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+  <!-- PWA -->
+  <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjogIktyZXV6ZmFocnQtUmVpc2VndWlkZSBDb3N0YSBTbWVyYWxkYSAyMDI2IiwgInNob3J0X25hbWUiOiAiQ29zdGEgU21lcmFsZGEiLCAiZGVzY3JpcHRpb24iOiAiSW50ZXJha3RpdmVyIFJlaXNlZ3VpZGUgZlx1MDBmY3IgZGllIENvc3RhIFNtZXJhbGRhIEtyZXV6ZmFocnQiLCAic3RhcnRfdXJsIjogIi4vIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwZjE5MjMiLCAidGhlbWVfY29sb3IiOiAiIzBmMTkyMyIsICJsYW5nIjogImRlIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0ExTVRJZ05URXlJajRLSUNBOGNtVmpkQ0IzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdjbmc5SWprMklpQm1hV3hzUFNJak1HWXhPVEl6SWk4K0NpQWdQSFJsZUhRZ2VEMGlNalUySWlCNVBTSXpOREFpSUdadmJuUXRjMmw2WlQwaU1qZ3dJaUIwWlhoMExXRnVZMmh2Y2owaWJXbGtaR3hsSWlCbWIyNTBMV1poYldsc2VUMGlRWEJ3YkdVZ1EyOXNiM0lnUlcxdmFta3NVMlZuYjJVZ1ZVa2dSVzF2YW1rc2MyRnVjeTF6WlhKcFppSSs4Sitic3p3dmRHVjRkRDRLUEM5emRtYysiLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQTFNVElnTlRFeUlqNEtJQ0E4Y21WamRDQjNhV1IwYUQwaU5URXlJaUJvWldsbmFIUTlJalV4TWlJZ2NuZzlJamsySWlCbWFXeHNQU0lqTUdZeE9USXpJaTgrQ2lBZ1BIUmxlSFFnZUQwaU1qVTJJaUI1UFNJek5EQWlJR1p2Ym5RdGMybDZaVDBpTWpnd0lpQjBaWGgwTFdGdVkyaHZjajBpYldsa1pHeGxJaUJtYjI1MExXWmhiV2xzZVQwaVFYQndiR1VnUTI5c2IzSWdSVzF2YW1rc1UyVm5iMlVnVlVrZ1JXMXZhbWtzYzJGdWN5MXpaWEpwWmlJKzhKK2Jzend2ZEdWNGRENEtQQzl6ZG1jKyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9XX0=">
+  <meta name="theme-color" content="#0f1923">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Costa Smeralda">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9Ijk2IiBmaWxsPSIjMGYxOTIzIi8+CiAgPHRleHQgeD0iMjU2IiB5PSIzNDAiIGZvbnQtc2l6ZT0iMjgwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXBwbGUgQ29sb3IgRW1vamksU2Vnb2UgVUkgRW1vamksc2Fucy1zZXJpZiI+8J+bszwvdGV4dD4KPC9zdmc+">
+  <meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>🛳 Costa Smeralda 2026</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;background:#0f1923;color:#e0e8f0;min-height:100dvh;overscroll-behavior:none}
+:root{
+  --bg:#0f1923;--dark:#152030;--card:#1c2d3e;--border:#243347;
+  --teal:#3ab5c8;--gold:#d4a843;--green:#3ecf8e;--muted:#7a92a8;
+}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit;border:none;background:none}
+img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* splash */
+.splash{background:linear-gradient(170deg,#091520,#0e2539,#103048);padding:36px 20px 24px;text-align:center;position:relative;overflow:hidden}
+.splash::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 30px,rgba(58,181,200,.04) 30px,rgba(58,181,200,.04) 31px);pointer-events:none}
+.splash-ship{font-size:2.4rem;margin-bottom:8px;position:relative}
+.splash-title{font-size:1.5rem;font-weight:700;color:#fff;position:relative}
+.splash-title span{color:var(--teal)}
+.splash-sub{font-size:.72rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;position:relative}
+.chips{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-top:12px;position:relative}
+.chip{background:rgba(58,181,200,.1);border:1px solid rgba(58,181,200,.2);color:var(--teal);font-size:.68rem;padding:3px 10px;border-radius:20px}
+
+/* top nav */
+.topnav{position:sticky;top:0;z-index:200;background:#0a141f;border-bottom:1px solid var(--border);padding:0 10px}
+.daytabs{display:flex;overflow-x:auto;scrollbar-width:none;gap:2px;padding:7px 0}
+.daytabs::-webkit-scrollbar{display:none}
+.dtab{flex-shrink:0;padding:7px 13px;border-radius:8px;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);transition:all .18s;white-space:nowrap}
+.dtab.on{background:var(--teal);color:#0a141f}
+.dtab:not(.on):hover{background:var(--border);color:#e0e8f0}
+
+/* panels */
+.main{padding-bottom:72px}
+.daypanel{display:none}
+.daypanel.on{display:block}
+
+/* day hero */
+.dhero{background:linear-gradient(135deg,var(--dark),var(--card));padding:18px 16px 14px;border-bottom:1px solid var(--border)}
+.dhtop{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.dnum{background:var(--gold);color:#0a141f;font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:.1em;text-transform:uppercase}
+.ddate{font-size:.75rem;color:var(--muted)}
+.dcity{font-size:1.55rem;font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1.1}
+.dhours{font-size:.73rem;color:var(--teal);margin-top:3px;font-weight:500}
+.pnote{margin-top:9px;background:rgba(58,181,200,.07);border:1px solid rgba(58,181,200,.18);border-radius:8px;padding:8px 12px;font-size:.73rem;color:var(--teal);line-height:1.45}
+.pnote strong{color:#e0e8f0}
+
+/* tour selector */
+.tsel{padding:12px 16px 0}
+.tsel-lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:7px}
+.ttabs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding-bottom:1px}
+.ttabs::-webkit-scrollbar{display:none}
+.ttab{flex-shrink:0;padding:8px 14px;border-radius:20px;font-size:.75rem;font-weight:600;border:1.5px solid var(--border);color:var(--muted);transition:all .18s;white-space:nowrap}
+.ttab.on{border-color:var(--gold);color:var(--gold);background:rgba(212,168,67,.09)}
+.ttab:not(.on):hover{border-color:#3d5166;color:#e0e8f0}
+
+/* tour panels */
+.tpanel{display:none;padding:0 16px}
+.tpanel.on{display:block}
+
+/* leaflet map */
+.map-wrap{margin:13px 0;border-radius:14px;overflow:hidden;position:relative;background:var(--card)}
+.leafmap{width:100%;height:230px}
+.map-open-btn{position:absolute;bottom:9px;right:9px;background:rgba(10,20,31,.88);backdrop-filter:blur(5px);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:5px 11px;font-size:.69rem;color:var(--teal);font-weight:600;display:flex;align-items:center;gap:4px;z-index:500}
+.mpin{background:var(--teal);color:#0a141f;font-size:11px;font-weight:700;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #0a141f;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+
+/* stops */
+.stops{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.stop-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:border-color .18s}
+.stop-card:hover{border-color:#3d5166}
+.stop-img{position:relative;height:150px;background:var(--dark);overflow:hidden}
+.snum{position:absolute;top:9px;left:9px;background:var(--teal);color:#0a141f;font-size:.68rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 1px 5px rgba(0,0,0,.4)}
+.maplnk{position:absolute;bottom:7px;right:7px;background:rgba(10,20,31,.85);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.14);border-radius:7px;padding:4px 9px;font-size:.68rem;color:#e0e8f0;font-weight:600;display:flex;align-items:center;gap:3px;z-index:2}
+.maplnk:active{background:var(--teal);color:#0a141f}
+.sbody{padding:11px 13px 0}
+.srow{display:flex;align-items:flex-start;justify-content:space-between;gap:7px;margin-bottom:3px}
+.sname{font-size:.95rem;font-weight:700;color:#e8f0f8;line-height:1.2}
+.sbadge{font-size:.6rem;padding:2px 7px;border-radius:10px;font-weight:600;flex-shrink:0;letter-spacing:.03em;margin-top:1px}
+.bhi{background:rgba(212,168,67,.15);color:var(--gold);border:1px solid rgba(212,168,67,.3)}
+.bfood{background:rgba(62,207,142,.1);color:#3ecf8e;border:1px solid rgba(62,207,142,.22)}
+.bcult{background:rgba(58,181,200,.09);color:var(--teal);border:1px solid rgba(58,181,200,.22)}
+.bopt{background:rgba(122,146,168,.08);color:var(--muted);border:1px solid var(--border)}
+.tag-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:5px}
+.tag{font-size:.61rem;padding:2px 6px;border-radius:8px;background:var(--dark);color:var(--muted);border:1px solid var(--border)}
+.twarn{color:#d4873a;background:rgba(212,135,58,.09);border-color:rgba(212,135,58,.25)}
+.sdesc{font-size:.77rem;color:var(--muted);line-height:1.5;margin-bottom:9px}
+
+/* prompt */
+.ptoggle{border-top:1px solid var(--border);margin:0 -13px;padding:9px 13px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:background .13s}
+.ptoggle:hover{background:rgba(255,255,255,.025)}
+.plbl{font-size:.7rem;color:var(--muted);display:flex;align-items:center;gap:4px}
+.pchev{font-size:.58rem;color:#3d5166;transition:transform .18s}
+.ptoggle.on .pchev{transform:rotate(180deg)}
+.pbox{display:none;border-top:1px solid var(--border);padding:11px 13px;background:rgba(58,181,200,.04)}
+.pbox.on{display:block}
+.plabel{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:5px}
+.ptext{font-size:.76rem;color:#94afc4;line-height:1.55;font-style:italic}
+.cpybtn{margin-top:9px;background:var(--dark);border:1px solid var(--border);color:var(--teal);padding:6px 12px;border-radius:7px;font-size:.7rem;font-weight:600;display:flex;align-items:center;gap:5px;transition:background .13s}
+.cpybtn:hover{background:var(--border)}
+.cpybtn.ok{background:rgba(62,207,142,.12);color:#3ecf8e;border-color:rgba(62,207,142,.27)}
+
+/* tipbox */
+.tipbox{background:rgba(212,168,67,.07);border:1px solid rgba(212,168,67,.22);border-radius:12px;padding:11px 13px;font-size:.76rem;color:#c8a03c;margin-bottom:12px;line-height:1.5}
+.tipbox strong{color:var(--gold)}
+
+/* transport */
+.tcard{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.tcardtitle{padding:8px 13px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);font-weight:600}
+.trow{display:grid;grid-template-columns:1fr auto;align-items:center;padding:8px 13px;border-bottom:1px solid var(--border);gap:6px}
+.trow:last-child{border-bottom:none}
+.tname{font-size:.8rem;color:#e0e8f0;font-weight:500}
+.tmeta{font-size:.69rem;color:var(--muted);margin-top:1px}
+.tprice{font-size:.8rem;color:var(--teal);font-weight:600;text-align:right;white-space:nowrap}
+
+/* spacer */
+.sp{height:12px}
+
+/* bottom nav */
+.bnav{position:fixed;bottom:0;left:0;right:0;z-index:300;background:#090f18;border-top:1px solid var(--border);display:flex;padding-bottom:env(safe-area-inset-bottom,0)}
+.bnbtn{flex:1;display:flex;flex-direction:column;align-items:center;padding:8px 4px 7px;gap:2px;color:var(--muted);font-size:.58rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;transition:color .15s}
+.bnbtn.on{color:var(--teal)}
+.bnicon{font-size:1.05rem;line-height:1}
+</style>
+</head>
+<body>
+
+
+<!-- PWA Install Banner -->
+<div id="install-bar" style="display:none;position:fixed;bottom:72px;left:12px;right:12px;z-index:400;
+  background:#1c2d3e;border:1px solid #3ab5c8;border-radius:14px;
+  padding:12px 14px;align-items:center;gap:10px;
+  box-shadow:0 4px 24px rgba(0,0,0,.5)">
+  <span style="font-size:1.4rem">🛳</span>
+  <div style="flex:1;min-width:0">
+    <div style="font-size:.82rem;font-weight:700;color:#e0e8f0">App installieren</div>
+    <div style="font-size:.7rem;color:#7a92a8;margin-top:1px">Zum Homescreen hinzufügen – auch offline nutzbar</div>
+  </div>
+  <button onclick="installApp()" style="background:#3ab5c8;color:#0f1923;border:none;border-radius:8px;
+    padding:7px 14px;font-size:.78rem;font-weight:700;cursor:pointer;white-space:nowrap">
+    Installieren
+  </button>
+  <button onclick="dismissInstall()" style="background:none;border:none;color:#7a92a8;
+    font-size:1.1rem;cursor:pointer;padding:4px;line-height:1">✕</button>
+</div>
+
+<div class="splash">
+  <div class="splash-ship">🛳</div>
+  <div class="splash-title">Costa <span>Smeralda</span></div>
+  <div class="splash-sub">25. Apr – 2. Mai 2026 · Ab Savona</div>
+  <div class="chips">
+    <span class="chip">Marseille</span><span class="chip">Barcelona</span>
+    <span class="chip">La Goulette</span><span class="chip">Palermo</span><span class="chip">Rom</span>
+  </div>
+</div>
+
+<div class="topnav">
+  <div class="daytabs" id="daytabs">
+    <button class="dtab on"  onclick="sd('marseille',this)">🇫🇷 Marseille</button>
+    <button class="dtab"     onclick="sd('barcelona',this)">🇪🇸 Barcelona</button>
+    <button class="dtab"     onclick="sd('lagoulette',this)">🇹🇳 La Goulette</button>
+    <button class="dtab"     onclick="sd('palermo',this)">🇮🇹 Palermo</button>
+    <button class="dtab"     onclick="sd('rom',this)">🏛 Rom</button>
+  </div>
+</div>
+
+<div class="main">
+
+
+<div class="daypanel on" id="p-marseille">
+  <div class="dhero">
+    <div class="dhtop"><span class="dnum">Tag 2</span><span class="ddate">So, 26. April 2026</span></div>
+    <div class="dcity">Marseille</div>
+    <div class="dhours">⏱ Im Hafen 09:00 – 17:30 Uhr</div>
+    <div class="pnote">🚌 <strong>Transport:</strong> Shuttle der Reederei (12–16 €, 20 Min.) oder kostenloser Portbus bis La Joliette</div>
+  </div>
+  <div class="tsel">
+    <div class="tsel-lbl">Tour wählen</div>
+    <div class="ttabs">
+      <button class="ttab on" onclick="st('marseille','a',this)">A · Entspannt &amp; Aussicht</button>
+      <button class="ttab"    onclick="st('marseille','b',this)">B · Kultur &amp; Geschichte</button>
+    </div>
+  </div>
+
+  <div class="tpanel on" id="t-marseille-a">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Marseille_vieuxport2.jpg" alt="Vieux Port Marseille" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Vieux+Port+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Vieux Port</span><span class="sbadge bhi">Startpunkt</span></div>
+          
+          <p class="sdesc">Marseilles altes Hafenbecken – flanieren, Fischmarkt, Cafés mit Hafenblick. Shuttle hält direkt hier.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe gerade am Vieux Port in Marseille. Erzähl mir die Geschichte dieses Hafens – warum er so bedeutend ist, was hier früher passierte, und was ich auf keinen Fall verpassen sollte. Lebendig, ca. 2 Minuten.">Du bist mein Tour Guide. Ich stehe gerade am Vieux Port in Marseille. Erzähl mir die Geschichte dieses Hafens – warum er so bedeutend ist, was hier früher passierte, und was ich auf keinen Fall verpassen sollte. Lebendig, ca. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Le_Panier_Marseille.jpg" alt="Le Panier" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Le+Panier+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Le Panier</span><span class="sbadge bcult">Viertel</span></div>
+          
+          <p class="sdesc">Ältestes Viertel Marseilles – charmante Gassen, Street Art, kleine Cafés und Läden zum Flanieren.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich schlendere durch Le Panier, das älteste Viertel Marseilles. Erkläre seine Geschichte – griechische Gründung, Zerstörung im Zweiten Weltkrieg, heutiger Charme. Was sollte ich auf keinen Fall übersehen? 2 Minuten.">Du bist mein Tour Guide. Ich schlendere durch Le Panier, das älteste Viertel Marseilles. Erkläre seine Geschichte – griechische Gründung, Zerstörung im Zweiten Weltkrieg, heutiger Charme. Was sollte ich auf keinen Fall übersehen? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+<div class="tipbox">🍽 <strong>Mittagessen:</strong> Rund um den Vieux Port – Bouillabaisse + kaltes Bier mit Hafenblick!</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Marseille_Notre-Dame_de_la_Garde_BLS.jpg" alt="Notre-Dame de la Garde" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Notre+Dame+de+la+Garde+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Notre-Dame de la Garde</span><span class="sbadge bhi">★ Highlight</span></div>
+          <div class="tag-row"><span class="tag">Bus Linie 60</span><span class="tag">Eintritt frei</span><span class="tag">360°-Aussicht</span></div>
+          <p class="sdesc">DAS Wahrzeichen Marseilles. 360°-Blick über Stadt, Hafen und Meer. Prachtvolle Goldmosaike innen.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor der Basilika Notre-Dame de la Garde in Marseille. Erkläre Geschichte, religiöse Bedeutung für die Marseillais, Mosaike und Ex-Votos innen – und einen überraschenden Fakt. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor der Basilika Notre-Dame de la Garde in Marseille. Erkläre Geschichte, religiöse Bedeutung für die Marseillais, Mosaike und Ex-Votos innen – und einen überraschenden Fakt. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-marseille-a" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Vieux+Port+de+Marseille/Le+Panier+Marseille/Basilique+Notre-Dame+de+la+Garde+Marseille" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-marseille-a');if(!el||el._leaflet_id)return;
+var map=L.map('m-marseille-a',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 43.2953, "lng": 5.3747, "n": "Vieux Port"}, {"lat": 43.3003, "lng": 5.373, "n": "Le Panier"}, {"lat": 43.284, "lng": 5.3685, "n": "Notre-Dame de la Garde"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-marseille-b">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Marseille_Cathedral_1.jpg" alt="Cathédrale de la Major" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Cathedrale+de+la+Major+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Cathédrale de la Major</span><span class="sbadge bcult">Kultur</span></div>
+          
+          <p class="sdesc">Riesige neobyzantinische Kathedrale nahe La Joliette – imposante Kuppeln, prächtige Innenausstattung.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor der Cathédrale de la Major in Marseille. Erkläre den neobyzantinischen Baustil, wann und warum sie gebaut wurde, und was mich architektonisch innen erwartet. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor der Cathédrale de la Major in Marseille. Erkläre den neobyzantinischen Baustil, wann und warum sie gebaut wurde, und was mich architektonisch innen erwartet. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Marseille-MuCEM-2015.jpg" alt="MuCEM" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=MuCEM+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">MuCEM &amp; Fort Saint-Jean</span><span class="sbadge bcult">Museum</span></div>
+          <div class="tag-row"><span class="tag">Terrassen kostenlos</span></div>
+          <p class="sdesc">Moderne Architektur trifft historische Festung. Terrassen mit Meerblick kostenlos zugänglich.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor MuCEM und Fort Saint-Jean. Erkläre den Kontrast zwischen moderner Architektur und historischer Festung, die Geschichte des Forts, und was ich von der Terrasse sehe. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor MuCEM und Fort Saint-Jean. Erkläre den Kontrast zwischen moderner Architektur und historischer Festung, die Geschichte des Forts, und was ich von der Terrasse sehe. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+<div class="tipbox">🍽 <strong>Mittagessen:</strong> Rund um den Vieux Port – Bouillabaisse + kaltes Bier!</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Marseille_Notre-Dame_de_la_Garde_BLS.jpg" alt="Notre-Dame de la Garde" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Notre+Dame+de+la+Garde+Marseille" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Notre-Dame de la Garde</span><span class="sbadge bhi">★ Highlight</span></div>
+          <div class="tag-row"><span class="tag">Bus Linie 60</span><span class="tag">Eintritt frei</span></div>
+          <p class="sdesc">Abschluss mit dem Wahrzeichen Marseilles – 360°-Blick, dann zurück zum Vieux Port mit Bier-Pause.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor Notre-Dame de la Garde. Erkläre die Geschichte, die Bedeutung für Marseille, und warum die Einheimischen sie die 'Bonne Mère' nennen. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor Notre-Dame de la Garde. Erkläre die Geschichte, die Bedeutung für Marseille, und warum die Einheimischen sie die "Bonne Mère" nennen. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-marseille-b" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Cath%C3%A9drale+de+la+Major+Marseille/MuCEM+Marseille/Notre-Dame+de+la+Garde+Marseille" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-marseille-b');if(!el||el._leaflet_id)return;
+var map=L.map('m-marseille-b',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 43.2987, "lng": 5.3567, "n": "Cath\u00e9drale de la Major"}, {"lat": 43.2965, "lng": 5.3602, "n": "MuCEM & Fort St-Jean"}, {"lat": 43.284, "lng": 5.3685, "n": "Notre-Dame de la Garde"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+
+<div class="daypanel" id="p-barcelona">
+  <div class="dhero">
+    <div class="dhtop"><span class="dnum">Tag 3</span><span class="ddate">Mo, 27. April 2026</span></div>
+    <div class="dcity">Barcelona</div>
+    <div class="dhours">⏱ Im Hafen 09:00 – 17:30 Uhr</div>
+    <div class="pnote">🚌 <strong>Transport:</strong> Shuttle bis Kolumbus-Denkmal (9–10 € R/T) · Metro Linie 3</div>
+  </div>
+  <div class="tsel">
+    <div class="tsel-lbl">Tour wählen</div>
+    <div class="ttabs">
+      <button class="ttab on" onclick="st('barcelona','a',this)">A · Sagrada + Strand ⭐</button>
+      <button class="ttab"    onclick="st('barcelona','b',this)">B · Gaudí Hop-on-off</button>
+    </div>
+  </div>
+
+  <div class="tpanel on" id="t-barcelona-a">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Sagrada_Familia_01.jpg" alt="Sagrada Família" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Sagrada+Familia+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Sagrada Família</span><span class="sbadge bhi">★ Must-see</span></div>
+          <div class="tag-row"><span class="tag twarn">⚠ Ticket vorbuchen!</span><span class="tag">Metro L3/L5</span><span class="tag">1,5–2 Std.</span></div>
+          <p class="sdesc">Gaudís unvollendetes Meisterwerk. Kolumbus-Denkmal → Metro Linie 3 Richtung Sagrada Família.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor der Sagrada Família. Erkläre Gaudís Vision, warum der Bau seit 1882 andauert, den Unterschied zwischen Geburts- und Passionsfassade, und was mich innen erwartet. Ein überraschender Fakt! 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor der Sagrada Família. Erkläre Gaudís Vision, warum der Bau seit 1882 andauert, den Unterschied zwischen Geburts- und Passionsfassade, und was mich innen erwartet. Ein überraschender Fakt! 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/La_Barceloneta_beach.JPG" alt="Barceloneta" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Barceloneta+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Barceloneta</span><span class="sbadge bfood">Mittagessen</span></div>
+          
+          <p class="sdesc">Paella am Strand mit Meerblick und kühlem Bier. Historisches Fischerviertel Barcelonas.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich sitze in Barceloneta am Strand. Erzähl mir die Geschichte des Fischerviertels und erkläre den Unterschied zwischen authentischer katalanischer Paella und der Touristenversion. 2 Minuten.">Du bist mein Tour Guide. Ich sitze in Barceloneta am Strand. Erzähl mir die Geschichte des Fischerviertels und erkläre den Unterschied zwischen authentischer katalanischer Paella und der Touristenversion. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Barcelona_Rambla.jpg" alt="Las Ramblas" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Las+Ramblas+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Las Ramblas</span><span class="sbadge bcult">Flanieren</span></div>
+          <div class="tag-row"><span class="tag twarn">⚠ Taschendiebe</span></div>
+          <p class="sdesc">Barcelonas berühmte Flaniermeile – Boqueria-Markt, Straßenartisten, Kolumbus-Denkmal am Ende.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich spaziere die Las Ramblas entlang. Erkläre mir die Geschichte, die Abschnitte, den Boqueria-Markt – und vor welchen Touristenfallen ich mich konkret in Acht nehmen sollte. 2 Minuten.">Du bist mein Tour Guide. Ich spaziere die Las Ramblas entlang. Erkläre mir die Geschichte, die Abschnitte, den Boqueria-Markt – und vor welchen Touristenfallen ich mich konkret in Acht nehmen sollte. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Barcelona_-_Barri_Gotic_-_20060902.jpg" alt="Barri Gòtic" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">4</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Barri+Gotic+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Barri Gòtic</span><span class="sbadge bcult">Altstadt</span></div>
+          
+          <p class="sdesc">Mittelalterliche Gassen, Kathedrale, Tapas-Bars – das historische Herz Barcelonas.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe im Barri Gòtic. Erkläre die römischen Ursprünge, was noch original erhalten ist, und was es mit dem jüdischen Viertel El Call auf sich hat. 2 Minuten.">Du bist mein Tour Guide. Ich stehe im Barri Gòtic. Erkläre die römischen Ursprünge, was noch original erhalten ist, und was es mit dem jüdischen Viertel El Call auf sich hat. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-barcelona-a" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Sagrada+Familia+Barcelona/Barceloneta+Barcelona/La+Rambla+Barcelona/Barri+Gothic+Barcelona" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-barcelona-a');if(!el||el._leaflet_id)return;
+var map=L.map('m-barcelona-a',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 41.4036, "lng": 2.1744, "n": "Sagrada Fam\u00edlia"}, {"lat": 41.3803, "lng": 2.1895, "n": "Barceloneta"}, {"lat": 41.3809, "lng": 2.1736, "n": "Las Ramblas"}, {"lat": 41.3834, "lng": 2.1761, "n": "Barri G\u00f2tic"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-barcelona-b">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Casa_Batll%C3%B3_%28Gaud%C3%AD%29_Passeig_de_Gr%C3%A0cia_Barcelona.jpg" alt="Casa Batlló" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Casa+Batllo+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Casa Batlló</span><span class="sbadge bhi">★ Gaudí</span></div>
+          <div class="tag-row"><span class="tag">Hop-on-off ab Kolumbus</span><span class="tag">~30 €</span></div>
+          <p class="sdesc">Gaudís fantasievolles Meisterwerk am Passeig de Gràcia – Drachen-Fassade, Skelett-Balkone.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor der Casa Batlló. Erkläre die Symbolik der Fassade – Skelett-Motiv, Drachenmythos – und wie sich Gaudís Stil hier von anderen Werken unterscheidet. Erwähn auch die Casa Milà. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor der Casa Batlló. Erkläre die Symbolik der Fassade – Skelett-Motiv, Drachenmythos – und wie sich Gaudís Stil hier von anderen Werken unterscheidet. Erwähn auch die Casa Milà. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Barcelona_-_Barri_Gotic_-_20060902.jpg" alt="Barri Gòtic" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Barri+Gotic+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Gotisches Viertel + Tapas</span><span class="sbadge bfood">Mittag</span></div>
+          
+          <p class="sdesc">Tapas und Bier im Gotischen Viertel – authentische Bars abseits der Touristenströme.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich esse Tapas im Gotischen Viertel. Erkläre mir die Geschichte des Viertels und welche typischen katalanischen Tapas ich probieren sollte. Katalonisch vs. Andalusisch – was ist der Unterschied? 2 Minuten.">Du bist mein Tour Guide. Ich esse Tapas im Gotischen Viertel. Erkläre mir die Geschichte des Viertels und welche typischen katalanischen Tapas ich probieren sollte. Katalonisch vs. Andalusisch – was ist der Unterschied? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/La_Barceloneta_beach.JPG" alt="Barceloneta" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Port+Vell+Barcelona" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Port Vell → Schiff</span><span class="sbadge bopt">Rückweg</span></div>
+          
+          <p class="sdesc">Spaziergang durch den alten Hafen zurück zum Kreuzfahrtterminal.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich spaziere durch Port Vell. Erzähl mir, wie sich der Hafen für die Olympischen Spiele 1992 verwandelte, und was der Unterschied zwischen Port Vell und dem modernen Port Olímpic ist. 2 Minuten.">Du bist mein Tour Guide. Ich spaziere durch Port Vell. Erzähl mir, wie sich der Hafen für die Olympischen Spiele 1992 verwandelte, und was der Unterschied zwischen Port Vell und dem modernen Port Olímpic ist. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-barcelona-b" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Casa+Batllo+Barcelona/Barri+Gothic+Barcelona/Port+Vell+Barcelona" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-barcelona-b');if(!el||el._leaflet_id)return;
+var map=L.map('m-barcelona-b',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 41.3916, "lng": 2.165, "n": "Casa Batll\u00f3"}, {"lat": 41.3834, "lng": 2.1761, "n": "Gotisches Viertel"}, {"lat": 41.3754, "lng": 2.1796, "n": "Port Vell"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+
+<div class="daypanel" id="p-lagoulette">
+  <div class="dhero">
+    <div class="dhtop"><span class="dnum">Tag 5</span><span class="ddate">Mi, 29. April 2026</span></div>
+    <div class="dcity">La Goulette / Tunis</div>
+    <div class="dhours">⏱ Im Hafen 08:00 – 17:30 Uhr</div>
+    <div class="pnote">🛂 <strong>Reisepass mitbringen!</strong> Tunesien nicht im Schengen-Raum. Preise beim Taxi verhandeln!</div>
+  </div>
+  <div class="tsel">
+    <div class="tsel-lbl">Tour wählen</div>
+    <div class="ttabs">
+      <button class="ttab on" onclick="st('lagoulette','a',this)">A · Geführter Ausflug ⭐</button>
+      <button class="ttab"    onclick="st('lagoulette','b',this)">B · Auf eigene Faust</button>
+      <button class="ttab"    onclick="st('lagoulette','c',this)">C · An Bord bleiben</button>
+    </div>
+  </div>
+
+  <div class="tpanel on" id="t-lagoulette-a">
+<div class="stops">
+<div class="tipbox">⭐ <strong>Empfehlung:</strong> Geführter Ausflug über Reederei oder GetYourGuide (ca. 50–80 €) – Guide übernimmt Transfers und erklärt alles vor Ort.</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/View_from_Byrsa_hill%2C_Carthage.jpg" alt="Karthago" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Carthage+Tunisia" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Karthago</span><span class="sbadge bhi">★ UNESCO</span></div>
+          <div class="tag-row"><span class="tag">Welterbe</span><span class="tag">Byrsa-Hügel</span></div>
+          <p class="sdesc">Antike Ruinen auf dem Byrsa-Hügel – Ausblick über den Golf von Tunis. Ehemals mächtigste Stadt des westlichen Mittelmeers.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe auf dem Byrsa-Hügel in Karthago. Erkläre die Geschichte – Aufstieg, Punische Kriege gegen Rom, Hannibal, totale Zerstörung. Was sehe ich hier konkret? 2 Minuten.">Du bist mein Tour Guide. Ich stehe auf dem Byrsa-Hügel in Karthago. Erkläre die Geschichte – Aufstieg, Punische Kriege gegen Rom, Hannibal, totale Zerstörung. Was sehe ich hier konkret? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Sidi_Bou_Said_-_Tunisie.jpg" alt="Sidi Bou Said" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Sidi+Bou+Said+Tunisia" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Sidi Bou Said</span><span class="sbadge bhi">★ Highlight</span></div>
+          
+          <p class="sdesc">Das "Portofino Tunesiens" – weiße Häuser, blaue Türen, malerische Gassen über dem Mittelmeer.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe in Sidi Bou Said. Warum sind alle Häuser weiß-blau – gibt es ein Gesetz? Was hat Paul Klee mit diesem Ort zu tun? Was trinkt man hier traditionell? 2 Minuten.">Du bist mein Tour Guide. Ich stehe in Sidi Bou Said. Warum sind alle Häuser weiß-blau – gibt es ein Gesetz? Was hat Paul Klee mit diesem Ort zu tun? Was trinkt man hier traditionell? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Tunis_Medina_%283%29.JPG" alt="Medina Tunis" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Medina+of+Tunis" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Medina von Tunis</span><span class="sbadge bcult">UNESCO</span></div>
+          <div class="tag-row"><span class="tag">Souk</span><span class="tag">Gewürze</span><span class="tag">Kunsthandwerk</span></div>
+          <p class="sdesc">Orientalischer Souk, Gewürze, Kunsthandwerk – einer der am besten erhaltenen arabischen Stadtkerne.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich bin in der Medina von Tunis. Erkläre die Logik einer arabischen Medina, wie der Souk nach Berufen sortiert ist, und die kulturellen Dos and Don'ts. 2 Minuten.">Du bist mein Tour Guide. Ich bin in der Medina von Tunis. Erkläre die Logik einer arabischen Medina, wie der Souk nach Berufen sortiert ist, und die kulturellen Dos and Don'ts. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-lagoulette-a" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/La+Goulette+Port+Tunisia/Carthage+Tunisia/Sidi+Bou+Said+Tunisia/Medina+of+Tunis" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-lagoulette-a');if(!el||el._leaflet_id)return;
+var map=L.map('m-lagoulette-a',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 36.8188, "lng": 10.3058, "n": "Hafen La Goulette"}, {"lat": 36.8528, "lng": 10.3258, "n": "Karthago"}, {"lat": 36.8703, "lng": 10.3368, "n": "Sidi Bou Said"}, {"lat": 36.7988, "lng": 10.1704, "n": "Medina Tunis"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-lagoulette-b">
+<div class="stops">
+<div class="tipbox">🚂 <strong>TGM-Zug:</strong> Ab Haltestelle "Goulette Vieille" (10 Min. zu Fuß vom Terminal) nach Karthago oder Tunis. Rückfahrt ab "Le Bac" direkt beim Terminal.</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/View_from_Byrsa_hill%2C_Carthage.jpg" alt="Karthago" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Carthage+Tunisia" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Karthago (TGM)</span><span class="sbadge bcult">Zug</span></div>
+          <div class="tag-row"><span class="tag">TGM Goulette Vieille → Carthage</span></div>
+          <p class="sdesc">Mit dem TGM-Zug direkt nach Karthago Hannibal – ca. 10 Min. ab Goulette Vieille.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich bin mit dem TGM nach Karthago gefahren. Was sind die wichtigsten Stätten auf eigene Faust? Byrsa-Hügel, Antoninus-Thermen, Punic Ports Museum – wie laufe ich am sinnvollsten? 2 Minuten.">Du bist mein Tour Guide. Ich bin mit dem TGM nach Karthago gefahren. Was sind die wichtigsten Stätten auf eigene Faust? Byrsa-Hügel, Antoninus-Thermen, Punic Ports Museum – wie laufe ich am sinnvollsten? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Tunis_Medina_%283%29.JPG" alt="Medina Tunis" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Medina+of+Tunis" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Medina von Tunis</span><span class="sbadge bcult">Souk</span></div>
+          <div class="tag-row"><span class="tag">TGM Tunis Marine + 5 Min.</span></div>
+          <p class="sdesc">TGM weiter bis Tunis Marine, dann 5 Min. zu Fuß zur Medina. Rückkehr: Haltestelle "Le Bac".</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich erkunde die Medina von Tunis auf eigene Faust. Gib mir einen Orientierungsplan: wichtigste Souks, Zitouna-Moschee, und wie finde ich mich zurück zum Ausgang? 2 Minuten.">Du bist mein Tour Guide. Ich erkunde die Medina von Tunis auf eigene Faust. Gib mir einen Orientierungsplan: wichtigste Souks, Zitouna-Moschee, und wie finde ich mich zurück zum Ausgang? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-lagoulette-b" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/La+Goulette+Port/Carthage+Tunisia/Medina+of+Tunis" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-lagoulette-b');if(!el||el._leaflet_id)return;
+var map=L.map('m-lagoulette-b',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 36.8188, "lng": 10.3058, "n": "Hafen / TGM"}, {"lat": 36.8528, "lng": 10.3258, "n": "Karthago"}, {"lat": 36.7988, "lng": 10.1704, "n": "Medina Tunis"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-lagoulette-c"><div class="sp"></div>
+<div class="tipbox">🛳 <strong>An Bord bleiben</strong> – absolut legitim! Leeres Schiff, freie Pools, Samsara Spa, Skywalk auf 65 m. Perfekter Erholungstag vor Palermo und Rom.</div>
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Marseille-MuCEM-2015.jpg" alt="MuCEM" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">🧖</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Costa+Smeralda+cruise+ship" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Samsara Spa</span><span class="sbadge bhi">Entspannung</span></div>
+          
+          <p class="sdesc">Sauna, Dampfbad, Salzraum. Bei fast leerem Schiff ist dies der perfekte Moment.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein persönlicher Wellnesstrainer. Ich habe heute einen freien Tag auf dem Kreuzfahrtschiff und möchte den Samsara Spa optimal nutzen. Erkläre mir die optimale Reihenfolge von Sauna, Dampfbad und Salzraum für maximale Erholung. 2 Minuten.">Du bist mein persönlicher Wellnesstrainer. Ich habe heute einen freien Tag auf dem Kreuzfahrtschiff und möchte den Samsara Spa optimal nutzen. Erkläre mir die optimale Reihenfolge von Sauna, Dampfbad und Salzraum für maximale Erholung. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Marseille_Notre-Dame_de_la_Garde_BLS.jpg" alt="Notre-Dame de la Garde" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">🌅</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=La+Goulette+Port+Tunisia" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Skywalk Deck 18</span><span class="sbadge bcult">Aussicht</span></div>
+          <div class="tag-row"><span class="tag">65 Meter Höhe</span></div>
+          <p class="sdesc">Höchster Punkt des Schiffs – grandioser Ausblick über den Hafen von La Goulette und die tunesische Küste.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe auf dem Skywalk des Kreuzfahrtschiffs und blicke auf La Goulette. Erzähl mir Wissenswertes über den Golf von Tunis, die historische Bedeutung dieses Hafens und was ich in der Ferne sehen könnte. 2 Minuten.">Du bist mein Tour Guide. Ich stehe auf dem Skywalk des Kreuzfahrtschiffs und blicke auf La Goulette. Erzähl mir Wissenswertes über den Golf von Tunis, die historische Bedeutung dieses Hafens und was ich in der Ferne sehen könnte. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div></div></div>
+
+<div class="daypanel" id="p-palermo">
+  <div class="dhero">
+    <div class="dhtop"><span class="dnum">Tag 6</span><span class="ddate">Do, 30. April 2026</span></div>
+    <div class="dcity">Palermo</div>
+    <div class="dhours">⏱ Im Hafen 08:00 – 16:00 Uhr</div>
+    <div class="pnote">🚶 <strong>Hafen = Altstadt:</strong> Alles zu Fuß erreichbar (10 Min.) – kein Transfer nötig!</div>
+  </div>
+  <div class="tsel">
+    <div class="tsel-lbl">Tour wählen</div>
+    <div class="ttabs">
+      <button class="ttab on" onclick="st('palermo','a',this)">A · Altstadt + Streetfood ⭐</button>
+      <button class="ttab"    onclick="st('palermo','b',this)">B · Palermo + Monreale</button>
+    </div>
+  </div>
+
+  <div class="tpanel on" id="t-palermo-a">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Teatro_massimo_Palermo.jpg" alt="Teatro Massimo" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Teatro+Massimo+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Teatro Massimo</span><span class="sbadge bhi">★ Wahrzeichen</span></div>
+          
+          <p class="sdesc">Größtes Opernhaus Italiens – hier wurde die legendäre Schlussszene aus The Godfather Part III gedreht!</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor dem Teatro Massimo. Warum ist es so bedeutend, wie lange dauerte der Bau, warum war es jahrzehntelang geschlossen, und welche Filmszene wurde hier gedreht? 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor dem Teatro Massimo. Warum ist es so bedeutend, wie lange dauerte der Bau, warum war es jahrzehntelang geschlossen, und welche Filmszene wurde hier gedreht? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Quattro_Canti%2C_Palermo_%28MB%29.jpg" alt="Quattro Canti" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Quattro+Canti+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Quattro Canti</span><span class="sbadge bcult">Barock</span></div>
+          
+          <p class="sdesc">Vier geschwungene Barockfassaden markieren das Herz der Altstadt an der Kreuzung Via Maqueda/Corso Vittorio Emanuele.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe an den Quattro Canti. Erkläre die Symbolik der vier Fassaden, welche spanische Periode dahinter steckt, und warum dieser Platz stadtplanerisch so revolutionär war. 2 Minuten.">Du bist mein Tour Guide. Ich stehe an den Quattro Canti. Erkläre die Symbolik der vier Fassaden, welche spanische Periode dahinter steckt, und warum dieser Platz stadtplanerisch so revolutionär war. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Palermo-Cattedrale.jpg" alt="Kathedrale Palermo" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Cattedrale+di+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Kathedrale von Palermo</span><span class="sbadge bcult">Normannisch</span></div>
+          
+          <p class="sdesc">Arabisch-normannischer Stil – hier liegen Kaiser Friedrich II. und die Staufer-Könige begraben.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor der Kathedrale von Palermo. Erkläre den normannisch-arabischen Stil und warum Sizilien eine solche Mischung aus Arabern, Normannen und Byzantinern entwickelt hat. Was hat Friedrich II. damit zu tun? 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor der Kathedrale von Palermo. Erkläre den normannisch-arabischen Stil und warum Sizilien eine solche Mischung aus Arabern, Normannen und Byzantinern entwickelt hat. Was hat Friedrich II. damit zu tun? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Palermo_-_Cappella_Palatina_-_Apse.jpg" alt="Cappella Palatina" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">4</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Cappella+Palatina+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Cappella Palatina</span><span class="sbadge bhi">★ Must-see</span></div>
+          <div class="tag-row"><span class="tag">UNESCO</span><span class="tag">Goldmosaike</span></div>
+          <p class="sdesc">Byzantinische Goldmosaike im Normannenpalast – kunsthistorisch einzigartig in Europa.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe in der Cappella Palatina, überwältigt von Goldmosaiken. Erkläre die Hauptszenen, was byzantinische Mosaike von anderen unterscheidet, und warum diese Kapelle das Herzstück der normannischen Herrschaft ist. 2 Minuten.">Du bist mein Tour Guide. Ich stehe in der Cappella Palatina, überwältigt von Goldmosaiken. Erkläre die Hauptszenen, was byzantinische Mosaike von anderen unterscheidet, und warum diese Kapelle das Herzstück der normannischen Herrschaft ist. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+<div class="tipbox">🍽 <strong>Mittagessen:</strong> Ballarò-Markt – Arancini, Panelle, Sfincione + Birra Moretti!</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Palermo_Ballaro_2019.jpg" alt="Ballarò-Markt" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">5</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Mercato+Ballaro+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Ballarò-Markt</span><span class="sbadge bfood">Mittagessen</span></div>
+          <div class="tag-row"><span class="tag">Arancini</span><span class="tag">Panelle</span><span class="tag">Sfincione</span></div>
+          <p class="sdesc">Ältester Markt Palermos – Streetfood-Paradies mit arabischen Einflüssen.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe auf dem Ballarò-Markt. Erkläre die Geschichte, was Arancini, Panelle und Sfincione sind, und welche arabischen Einflüsse in der sizilianischen Küche stecken. 2 Minuten.">Du bist mein Tour Guide. Ich stehe auf dem Ballarò-Markt. Erkläre die Geschichte, was Arancini, Panelle und Sfincione sind, und welche arabischen Einflüsse in der sizilianischen Küche stecken. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-palermo-a" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Porto+di+Palermo/Teatro+Massimo+Palermo/Quattro+Canti+Palermo/Cattedrale+di+Palermo/Cappella+Palatina+Palermo/Mercato+Ballaro+Palermo" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-palermo-a');if(!el||el._leaflet_id)return;
+var map=L.map('m-palermo-a',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 38.1337, "lng": 13.3601, "n": "Porto"}, {"lat": 38.1177, "lng": 13.3571, "n": "Teatro Massimo"}, {"lat": 38.1157, "lng": 13.3569, "n": "Quattro Canti"}, {"lat": 38.1157, "lng": 13.3525, "n": "Kathedrale"}, {"lat": 38.1118, "lng": 13.3516, "n": "Cappella Palatina"}, {"lat": 38.1098, "lng": 13.3497, "n": "Ballar\u00f2"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-palermo-b">
+<div class="stops">
+<div class="tipbox">⚠️ <strong>Achtung:</strong> Abfahrt 16:00 Uhr! Morgens sofort losfahren. Bus 389 ab Piazza Indipendenza nach Monreale (~30 Min.).</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Palermo-Cattedrale.jpg" alt="Kathedrale Palermo" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Cattedrale+di+Palermo" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Palermo Schnelldurchgang</span><span class="sbadge bcult">Schnell</span></div>
+          
+          <p class="sdesc">Kathedrale + Quattro Canti als Schnelldurchgang – dann sofort Richtung Monreale aufbrechen.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich habe nur 30 Minuten für Palermos Altstadt vor der Weiterfahrt nach Monreale. Was sind die drei absolut wichtigsten Dinge und der effizienteste Weg? 2 Minuten.">Du bist mein Tour Guide. Ich habe nur 30 Minuten für Palermos Altstadt vor der Weiterfahrt nach Monreale. Was sind die drei absolut wichtigsten Dinge und der effizienteste Weg? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Monreale_Duomo_mosaics_Pantokrator.jpg" alt="Monreale" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Duomo+di+Monreale" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Dom von Monreale</span><span class="sbadge bhi">★ Einzigartig</span></div>
+          <div class="tag-row"><span class="tag">Bus 389</span><span class="tag">UNESCO</span><span class="tag">~30 Min. ab Palermo</span></div>
+          <p class="sdesc">Die beeindruckendsten byzantinischen Mosaike ganz Siziliens – 6.500 m² Gold und Mosaik.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe im Dom von Monreale. Wie unterscheiden sich die Mosaike von der Cappella Palatina, welche biblischen Szenen sind dargestellt, und warum ließ König Wilhelm II. diesen Dom bauen? 2 Minuten.">Du bist mein Tour Guide. Ich stehe im Dom von Monreale. Wie unterscheiden sich die Mosaike von der Cappella Palatina, welche biblischen Szenen sind dargestellt, und warum ließ König Wilhelm II. diesen Dom bauen? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-palermo-b" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Cattedrale+di+Palermo/Duomo+di+Monreale" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-palermo-b');if(!el||el._leaflet_id)return;
+var map=L.map('m-palermo-b',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 38.1157, "lng": 13.3525, "n": "Palermo Altstadt"}, {"lat": 38.0833, "lng": 13.2913, "n": "Dom von Monreale"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+
+<div class="daypanel" id="p-rom">
+  <div class="dhero">
+    <div class="dhtop"><span class="dnum">Tag 7</span><span class="ddate">Fr, 1. Mai 2026</span></div>
+    <div class="dcity">Rom</div>
+    <div class="dhours">⏱ Im Hafen 08:30 – 18:30 Uhr · <strong style="color:var(--gold)">10 Stunden!</strong></div>
+    <div class="pnote">🚂 <strong>Zug:</strong> BIRG-Tagesticket 14 € (inkl. Metro+Bus). Civitavecchia → Roma S. Pietro ca. 45–60 Min. Zug spätestens 16:30 zurück!</div>
+  </div>
+  <div class="tsel">
+    <div class="tsel-lbl">Tour wählen</div>
+    <div class="ttabs">
+      <button class="ttab on" onclick="st('rom','a',this)">A · Vatikan + Zentrum ⭐</button>
+      <button class="ttab"    onclick="st('rom','b',this)">B · Kolosseum-Fokus</button>
+      <button class="ttab"    onclick="st('rom','c',this)">C · Civitavecchia</button>
+    </div>
+  </div>
+
+  <div class="tpanel on" id="t-rom-a">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg" alt="Petersdom" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=St+Peters+Basilica+Vatican" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Petersdom &amp; Petersplatz</span><span class="sbadge bhi">★ Kostenlos</span></div>
+          <div class="tag-row"><span class="tag">Zug Roma S. Pietro → 10 Min.</span></div>
+          <p class="sdesc">Größte Kirche der Welt – kostenlos! Kuppelbesteigung für grandiosen Blick über ganz Rom.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe auf dem Petersplatz. Erkläre die Geschichte des Petersdoms – von Konstantins erster Basilika bis zu Michelangelos Kuppel, Berninis Platzgestaltung, und was mich bei der Pietà erwartet. 2 Minuten.">Du bist mein Tour Guide. Ich stehe auf dem Petersplatz. Erkläre die Geschichte des Petersdoms – von Konstantins erster Basilika bis zu Michelangelos Kuppel, Berninis Platzgestaltung, und was mich bei der Pietà erwartet. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Castel_Sant%27Angelo_from_the_bridge.jpg" alt="Engelsburg" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Castel+Sant+Angelo+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Engelsburg (Castel Sant'Angelo)</span><span class="sbadge bcult">Spaziergang</span></div>
+          
+          <p class="sdesc">Mausoleum Hadrians → Papstburg → geheimer Fluchtgang Passetto. Prächtige Engelsbrücke.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich gehe über die Engelsbrücke zur Engelsburg. Erkläre die Geschichte – vom Mausoleum Hadrians über die Papstburg bis zum Passetto. Was hat sie mit Puccinis Tosca zu tun? 2 Minuten.">Du bist mein Tour Guide. Ich gehe über die Engelsbrücke zur Engelsburg. Erkläre die Geschichte – vom Mausoleum Hadrians über die Papstburg bis zum Passetto. Was hat sie mit Puccinis Tosca zu tun? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+<div class="tipbox">🍽 <strong>Mittagessen:</strong> Trastevere (15 Min. zu Fuß) – authentisch römisch: Pizza al taglio, Pasta, kaltes Bier!</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Trevi_fountain%2C_Rome%2C_Italy.jpg" alt="Trevi-Brunnen" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Trevi+Fountain+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Trevi-Brunnen</span><span class="sbadge bhi">★ Ikonisch</span></div>
+          <div class="tag-row"><span class="tag">Kostenlos</span><span class="tag">Münze werfen!</span></div>
+          <p class="sdesc">Roms berühmtester Brunnen. Münze mit rechter Hand über linke Schulter = Wiederkehr-Versprechen.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor dem Trevi-Brunnen. Erkläre die Mythologie – Neptun, die Pferde, das antike Aquädukt dahinter. Und wohin fließt das Geld der geworfenen Münzen wirklich? 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor dem Trevi-Brunnen. Erkläre die Mythologie – Neptun, die Pferde, das antike Aquädukt dahinter. Und wohin fließt das Geld der geworfenen Münzen wirklich? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pantheon_Rome_2020.jpg" alt="Pantheon" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">4</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Pantheon+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Pantheon</span><span class="sbadge bcult">Antik</span></div>
+          <div class="tag-row"><span class="tag twarn">Reservierung empfohlen</span></div>
+          <p class="sdesc">Besterhaltenes antikes Bauwerk der Welt. Das Oculus ist offen zum Himmel – auch bei Regen.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe im Pantheon und schaue durchs Oculus. Erkläre das Ingenieursrätsel der Kuppel – wie ohne Stahl gebaut, was bei Regen passiert, warum noch so gut erhalten. Wer liegt hier begraben? 2 Minuten.">Du bist mein Tour Guide. Ich stehe im Pantheon und schaue durchs Oculus. Erkläre das Ingenieursrätsel der Kuppel – wie ohne Stahl gebaut, was bei Regen passiert, warum noch so gut erhalten. Wer liegt hier begraben? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg" alt="Kolosseum" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">5</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Colosseum+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Kolosseum</span><span class="sbadge bhi">★ Antikes Rom</span></div>
+          <div class="tag-row"><span class="tag">Metro B</span><span class="tag">Außen kostenlos</span><span class="tag">Konstantinsbogen</span></div>
+          <p class="sdesc">Von außen gratis + drumherumlaufen. Konstantinsbogen und Forum Romanum von Via dei Fori Imperiali.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor dem Kolosseum. Erkläre Kapazität, Gladiatorenkämpfe, ob der Daumen-Mythos stimmt, und was ich von Konstantinsbogen und Forum Romanum kostenlos sehen kann. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor dem Kolosseum. Erkläre Kapazität, Gladiatorenkämpfe, ob der Daumen-Mythos stimmt, und was ich von Konstantinsbogen und Forum Romanum kostenlos sehen kann. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-rom-a" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/St+Peter's+Basilica+Rome/Castel+Sant'Angelo+Rome/Trevi+Fountain+Rome/Pantheon+Rome/Colosseum+Rome" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-rom-a');if(!el||el._leaflet_id)return;
+var map=L.map('m-rom-a',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 41.9022, "lng": 12.4539, "n": "Petersdom"}, {"lat": 41.9031, "lng": 12.4663, "n": "Engelsburg"}, {"lat": 41.9009, "lng": 12.4833, "n": "Trevi-Brunnen"}, {"lat": 41.8986, "lng": 12.4769, "n": "Pantheon"}, {"lat": 41.8902, "lng": 12.4922, "n": "Kolosseum"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-rom-b">
+<div class="stops">
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg" alt="Kolosseum" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Colosseum+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Kolosseum + Forum Romanum</span><span class="sbadge bhi">★ Start</span></div>
+          <div class="tag-row"><span class="tag">Metro B Colosseo</span><span class="tag twarn">Tickets wochen vorher!</span></div>
+          <p class="sdesc">Antikes Rom in Gänze – Kolosseum innen, Konstantinsbogen, Forum Romanum von oben.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor dem Kolosseum mit Innen-Ticket. Erkläre die Geschichte der Gladiatoren, den Aufbau mit unterirdischen Gängen, und was der Konstantinsbogen zu feiern hatte. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor dem Kolosseum mit Innen-Ticket. Erkläre die Geschichte der Gladiatoren, den Aufbau mit unterirdischen Gängen, und was der Konstantinsbogen zu feiern hatte. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Trastevere_-_piazza_Santa_Maria_in_trastevere_1060633.JPG" alt="Trastevere" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Rione+Monti+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Viertel Monti (Mittag)</span><span class="sbadge bfood">Craft Beer</span></div>
+          
+          <p class="sdesc">Hippes Viertel direkt hinter dem Kolosseum – Craft-Beer-Bars, authentische Trattorie.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich esse in Rione Monti. Erkläre die Geschichte des Viertels und welche klassisch römischen Gerichte ich bestellen sollte. Cacio e Pepe vs. Carbonara – was ist der Unterschied? 2 Minuten.">Du bist mein Tour Guide. Ich esse in Rione Monti. Erkläre die Geschichte des Viertels und welche klassisch römischen Gerichte ich bestellen sollte. Cacio e Pepe vs. Carbonara – was ist der Unterschied? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pantheon_Rome_2020.jpg" alt="Pantheon" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">3</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Pantheon+Rome" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Pantheon → Trevi → Navona</span><span class="sbadge bcult">Zentrum</span></div>
+          
+          <p class="sdesc">Drei Klassiker im Nachmittags-Rundgang: Pantheon → Trevi-Brunnen → Piazza Navona.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich mache den Dreierpack Pantheon, Trevi-Brunnen, Piazza Navona. Gib mir die wichtigsten Fakten zu jedem Ort in je 30 Sekunden. 2 Minuten gesamt.">Du bist mein Tour Guide. Ich mache den Dreierpack Pantheon, Trevi-Brunnen, Piazza Navona. Gib mir die wichtigsten Fakten zu jedem Ort in je 30 Sekunden. 2 Minuten gesamt.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-rom-b" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/dir/Colosseum+Rome/Rione+Monti+Rome/Pantheon+Rome/Trevi+Fountain+Rome/Piazza+Navona+Rome" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-rom-b');if(!el||el._leaflet_id)return;
+var map=L.map('m-rom-b',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 41.8902, "lng": 12.4922, "n": "Kolosseum + Forum"}, {"lat": 41.8955, "lng": 12.487, "n": "Rione Monti"}, {"lat": 41.8986, "lng": 12.4769, "n": "Pantheon \u2192 Trevi \u2192 Navona"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+  <div class="tpanel" id="t-rom-c">
+<div class="stops">
+<div class="tipbox">🌊 <strong>Entspannter letzter Tag:</strong> Civitavecchia hat eine nette Altstadt, Forte Michelangelo und eine schöne Strandpromenade.</div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Quattro_Canti%2C_Palermo_%28MB%29.jpg" alt="Quattro Canti" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">1</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Forte+Michelangelo+Civitavecchia" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Forte Michelangelo</span><span class="sbadge bcult">Festung</span></div>
+          
+          <p class="sdesc">Von Michelangelo entworfene Festung direkt am Hafen – historisch bedeutend und gut erhalten.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich stehe vor dem Forte Michelangelo in Civitavecchia. Erkläre warum Michelangelo diese Festung entworfen hat, ihre militärische Geschichte, und was heute noch zu sehen ist. 2 Minuten.">Du bist mein Tour Guide. Ich stehe vor dem Forte Michelangelo in Civitavecchia. Erkläre warum Michelangelo diese Festung entworfen hat, ihre militärische Geschichte, und was heute noch zu sehen ist. 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stop-card">
+        <div class="stop-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/La_Barceloneta_beach.JPG" alt="Barceloneta" onerror="this.parentElement.style.background='#1c2d3e';this.remove()">
+          <span class="snum">2</span>
+          <a class="maplnk" href="https://maps.google.com/maps?q=Civitavecchia+lungomare" target="_blank">📍 Maps</a>
+        </div>
+        <div class="sbody">
+          <div class="srow"><span class="sname">Lungomare Civitavecchia</span><span class="sbadge bfood">Promenade</span></div>
+          
+          <p class="sdesc">Schöne Uferpromenade mit Restaurants – Pasta und Blick aufs Meer als Abschluss der Kreuzfahrt.</p>
+          <div class="ptoggle" onclick="tp(this)"><span class="plbl">🎙 Tour-Guide-Prompt</span><span class="pchev">▼</span></div>
+          <div class="pbox">
+            <div class="plabel">Sprachmodus – einsprechen oder kopieren</div>
+            <div class="ptext" data-p="Du bist mein Tour Guide. Ich sitze am Lungomare in Civitavecchia. Erzähl mir die Geschichte dieser Hafenstadt – von der Antike über den Kirchenstaat bis heute. Was macht sie besonders? 2 Minuten.">Du bist mein Tour Guide. Ich sitze am Lungomare in Civitavecchia. Erzähl mir die Geschichte dieser Hafenstadt – von der Antike über den Kirchenstaat bis heute. Was macht sie besonders? 2 Minuten.</div>
+            <button class="cpybtn" onclick="cp(this)">📋 Kopieren</button>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="map-wrap">
+  <div id="m-rom-c" class="leafmap"></div>
+  <a class="map-open-btn" href="https://www.google.com/maps/place/Civitavecchia" target="_blank">↗ Route in Maps</a>
+</div>
+<script>
+(function(){var el=document.getElementById('m-rom-c');if(!el||el._leaflet_id)return;
+var map=L.map('m-rom-c',{zoomControl:false,attributionControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+var pts=[{"lat": 42.0939, "lng": 11.7934, "n": "Forte Michelangelo"}, {"lat": 42.0919, "lng": 11.796, "n": "Lungomare"}],ll=[];
+pts.forEach(function(p,i){
+  var ic=L.divIcon({className:'',html:'<div class="mpin">'+(p.n.startsWith('Hafen')?'S':(i+1))+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p.lat,p.lng],{icon:ic}).bindPopup('<b>'+p.n+'</b>').addTo(map);
+  ll.push([p.lat,p.lng]);
+});
+if(ll.length>1)L.polyline(ll,{color:'#3ab5c8',weight:3,dashArray:'7,5',opacity:.85}).addTo(map);
+map.fitBounds(L.latLngBounds(ll),{padding:[28,28],maxZoom:16});
+})();
+</script>
+</div></div>
+
+</div><!-- /main -->
+
+<nav class="bnav">
+  <button class="bnbtn on" onclick="sd('marseille',this)"><span class="bnicon">🇫🇷</span>Marseille</button>
+  <button class="bnbtn"    onclick="sd('barcelona',this)"><span class="bnicon">🇪🇸</span>Barcelona</button>
+  <button class="bnbtn"    onclick="sd('lagoulette',this)"><span class="bnicon">🇹🇳</span>Tunis</button>
+  <button class="bnbtn"    onclick="sd('palermo',this)"><span class="bnicon">🇮🇹</span>Palermo</button>
+  <button class="bnbtn"    onclick="sd('rom',this)"><span class="bnicon">🏛</span>Rom</button>
+</nav>
+
+<script>
+function sd(id,el){
+  document.querySelectorAll('.daypanel').forEach(p=>p.classList.remove('on'));
+  document.getElementById('p-'+id).classList.add('on');
+  document.querySelectorAll('.dtab,.bnbtn').forEach(b=>b.classList.remove('on'));
+  document.querySelectorAll('.dtab,.bnbtn').forEach(b=>{
+    var oc=b.getAttribute('onclick')||'';
+    if(oc.includes("'"+id+"'"))b.classList.add('on');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function st(day,tour,el){
+  var pre='t-'+day+'-';
+  document.querySelectorAll('[id^="'+pre+'"]').forEach(p=>p.classList.remove('on'));
+  document.getElementById(pre+tour).classList.add('on');
+  el.closest('.ttabs').querySelectorAll('.ttab').forEach(b=>b.classList.remove('on'));
+  el.classList.add('on');
+}
+function tp(row){
+  var box=row.nextElementSibling;
+  var on=box.classList.toggle('on');
+  row.classList.toggle('on',on);
+}
+function cp(btn){
+  var txt=btn.previousElementSibling.getAttribute('data-p')||btn.previousElementSibling.textContent.trim();
+  var done=function(){
+    var o=btn.innerHTML;btn.innerHTML='✅ Kopiert!';btn.classList.add('ok');
+    setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok')},2000);
+  };
+  if(navigator.clipboard){navigator.clipboard.writeText(txt).then(done).catch(function(){fb();done()});}
+  else{fb();done();}
+  function fb(){var t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);}
+}
+</script>
+
+<script>
+// ── Service Worker ───────────────────────────────
+if ('serviceWorker' in navigator) {
+  const swCode = "\nconst CACHE = 'kreuzfahrt-v1';\nconst ASSETS = ['./', './index.html'];\nself.addEventListener('install', e => {\n  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));\n});\nself.addEventListener('activate', e => {\n  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k!==CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));\n});\nself.addEventListener('fetch', e => {\n  if(e.request.method !== 'GET') return;\n  e.respondWith(caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('./'))));\n});\n";
+  const blob = new Blob([swCode], {type: 'application/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(() => {});
+}
+
+// ── Install Banner ───────────────────────────────
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('install-bar').style.display = 'flex';
+});
+window.addEventListener('appinstalled', () => {
+  document.getElementById('install-bar').style.display = 'none';
+  deferredPrompt = null;
+});
+function installApp() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(() => {
+    deferredPrompt = null;
+    document.getElementById('install-bar').style.display = 'none';
+  });
+}
+function dismissInstall() {
+  document.getElementById('install-bar').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
